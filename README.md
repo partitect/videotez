@@ -1,0 +1,2 @@
+# videotez
+Tez Çalışması Projesi
