@@ -83,4 +83,74 @@
   min-height: 100%;
   display: none;
 }
+
+.questions {
+  position: absolute;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+.questions h1 {
+  color: white;
+}
+
+.questions .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 90%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.questions .list a {
+  width: 40%;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 1em;
+  padding: 35px;
+  min-height: 80px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.6);
+  float: left;
+  border-radius: 1em;
+  line-height: 1em;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.questions .list a:hover {
+  background: white;
+  -webkit-transition: all ease .3ms;
+  transition: all ease .3ms;
+  color: black;
+}
 /*# sourceMappingURL=main.css.map */
