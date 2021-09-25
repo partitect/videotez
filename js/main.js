@@ -8,7 +8,7 @@ $(document).ready(function () {
   $videoPlayer.on("ended", function() {
     var v = $(this);
     var list = $(".questionList");
-    list.append("<li>Soru 1</li><li>Soru 2</li><li>Soru 3</li><li>Soru 3</li>")
+    list.html("<li>Soru 1</li><li>Soru 2</li><li>Soru 3</li><li>Soru 3</li>")
     //alert("end video 1")
 });
   DomVideoPlayer.ontimeupdate = function () {
@@ -42,7 +42,7 @@ $(document).ready(function () {
   });
 
   $(".skipbutton").on("click",function(){
-    jumpToTime(DomVideoPlayer.duration);
+    jumpToTime(DomVideoPlayer.duration +100);
   })
 
   function jumpToTime(time){
