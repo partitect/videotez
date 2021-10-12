@@ -1,36 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <link href="plugins/fomantic/semantic.min.css" rel="stylesheet" />
-    <link href="css/main.min.css" rel="stylesheet" />
-    <title>Ameliyat Sonrası Pediatrik Klinik Simülasyon</title>
-  </head>
-  <body>
-    <div id="custom-seekbar">
-      <span></span>
-    </div>
-    <a class="ppbuton ui circular icon massive button active">
-      <i class="play icon"></i>
-    </a>
-    <a class="skipbutton ui circular icon massive button active">
-        <i class="forward icon"></i>
-      </a>
-    <video id="videoplayer" width="100%" height="100%" preload="metadata">
-      <source src="assets/sample-video.mp4" type="video/mp4" />
-      Tarayıcınız html5 desteklemiyor
-    </video>
-    <div class="questions">
-<ul class="questionList"></ul>
-</div>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="plugins/fomantic/semantic.min.js"></script>
-    <script src="js/main.js"></script>
-    <script></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link href="plugins/fomantic/semantic.min.css" rel="stylesheet" />
+  <link href="css/main.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <table class="ui celled structured table">
+    <tbody>
+      <tr>
+        <td colspan="3" class="center aligned">
+          <p><strong>Hemşirelik Tanıları </strong></p>
+        </td>
+
+        <td class="center aligned">
+          <p><strong>Belirlenen Hemşirelik Tanıları</strong></p>
+        </td>
+      </tr>
+      <tr class="blue">
+        <td rowspan="2" class="collapsing center aligned" width="50">
+          <p><strong>İletişim</strong></p>
+        </td>
+        <td class="sortable-td-item"  width="100">
+          <p>Sosyal etkileşimde bozulma</p>
+        </td>
+        <td class="sortable-td-item" width="100">
+          <p>S&ouml;zel iletişimde bozulma</p>
+        </td>
+
+        <td rowspan="2" class="sortable-target" width="300"></td>
+      </tr>
+      <tr class="blue">
+        <td class="sortable-td-item" width="100">
+          <p>Yalnızlık riski</p>
+        </td>
+        <td class="sortable-td-item" width="100">
+          <p>İletişimi geliştirmeye hazır olma</p>
+        </td>
+      </tr>
+      <tr class="green">
+        <td rowspan="2" class="collapsing center aligned" width="50">
+          <p>
+            <strong>G&uuml;venli &ccedil;evrenin
+              s&uuml;rd&uuml;r&uuml;lmesi</strong>
+          </p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Travma riski</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Yaralanma riski</p>
+        </td>
+
+        <td rowspan="2"  class="sortable-target" width="300"></td>
+      </tr>
+      <tr class="green">
+        <td class="sortable-td-item">
+          <p>D&uuml;şme riski</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Ayakta durmada bozulma</p>
+        </td>
+      </tr>
+      <tr class="red">
+        <td rowspan="2" class="collapsing center aligned" width="50">
+          <p><strong>Solunum</strong></p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Etkisiz solunum &ouml;r&uuml;nt&uuml;s&uuml;</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Aspirasyon riski</p>
+        </td>
+
+        <td rowspan="2"  class="sortable-target" width="300"></td>
+      </tr>
+      <tr class="red">
+        <td class="sortable-td-item">
+          <p>
+            Ventilat&ouml;rden ayrılmaya disfonksiyonel&nbsp;&nbsp;&nbsp;
+            tepki
+          </p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Hava yolunu temizlemede etkisizlik</p>
+        </td>
+      </tr>
+      <tr class="brown">
+        <td rowspan="2" class="collapsing center aligned" width="50">
+          <p><strong>Kişisel temizlik&nbsp; ve giyim</strong></p>
+        </td>
+        <td class="sortable-td-item">
+          <p>
+            Aile i&ccedil;i s&uuml;re&ccedil;lerde g&uuml;&ccedil;lenmeye
+            hazır oluş
+          </p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Ebeveynlik rol &ccedil;atışması</p>
+        </td>
+
+        <td rowspan="2" class="sortable-target" width="300"></td>
+      </tr>
+      <tr class="brown">
+        <td class="sortable-td-item">
+          <p>Aile s&uuml;recinde kesintiye uğrama</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Etkisiz rol performansı</p>
+        </td>
+      </tr>
+      <tr class="teal">
+        <td rowspan="2" class="collapsing center aligned" width="50">
+          <p><strong>Yeme ve i&ccedil;me</strong></p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Yutmada bozulma</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Beslenmede dengesizlik</p>
+        </td>
+
+        <td rowspan="2" class="sortable-target" width="300"></td>
+      </tr>
+      <tr class="teal">
+        <td class="sortable-td-item">
+          <p>Oral m&uuml;k&ouml;z membranda bozulma riski</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Beslenmede g&uuml;&ccedil;lenmeye hazır olma</p>
+        </td>
+      </tr>
+      <tr class="purple">
+        <td rowspan="2" class="collapsing center aligned" width="50">
+          <p>
+            <strong>G&uuml;venli &ccedil;evrenin
+              s&uuml;rd&uuml;r&uuml;lmesi</strong>
+          </p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Basın&ccedil; &uuml;lseri riski</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Enfeksiyon riski</p>
+        </td>
+
+        <td rowspan="2" class="sortable-target" width="300"></td>
+      </tr>
+      <tr class="purple">
+        <td class="sortable-td-item">
+          <p>Enfeksiyon bulaştırma riski</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Basın&ccedil; &uuml;lseri</p>
+        </td>
+      </tr>
+      <tr class="orange">
+        <td rowspan="2" class="collapsing center aligned" width="50">
+          <p><strong>Hareket </strong></p>
+        </td>
+        <td  class="sortable-td-item">
+          <p>Fiziksel mobilitede bozulma</p>
+        </td>
+        <td  class="sortable-td-item">
+          <p>Aktivite intoleransı</p>
+        </td>
+
+        <td rowspan="2" class="sortable-target" width="300"></td>
+      </tr>
+      <tr class="orange">
+        <td  class="sortable-td-item">
+          <p>Aktivite intoleransı riski</p>
+        </td>
+        <td  class="sortable-td-item">
+          <p>Yatak i&ccedil;i mobilitede bozulma</p>
+        </td>
+      </tr>
+      <tr class="yellow">
+        <td rowspan="2" class="collapsing center aligned" width="50">
+          <p>
+            <strong>G&uuml;venli &ccedil;evrenin
+              s&uuml;rd&uuml;r&uuml;lmesi</strong>
+          </p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Konforda bozulma</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Kronik ağrı sendromu</p>
+        </td>
+
+        <td rowspan="2" class="sortable-target" width="300"></td>
+      </tr>
+      <tr class="yellow">
+        <td class="sortable-td-item">
+          <p>Kronik ağrı</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Akut ağrı</p>
+        </td>
+      </tr>
+      <tr class="olive">
+        <td rowspan="2" class="collapsing center aligned" width="50">
+          <p><strong>Kişisel temizlik&nbsp; ve giyim</strong></p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Banyo yapmada &ouml;z bakım yetersizliği</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Beslenmede &ouml;z bakım yetersizliği</p>
+        </td>
+
+        <td rowspan="2" class="sortable-target" width="300"></td>
+      </tr>
+      <tr class="olive">
+        <td class="sortable-td-item">
+          <p>Giyinmede &ouml;z bakım yetersizliği</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Tuvalet ihtiyacını karşılamada &ouml;z bakım yetersizliği</p>
+        </td>
+      </tr>
+      <tr class="pink">
+        <td rowspan="2" class="collapsing center aligned" width="50">
+          <p><strong>Uyku</strong></p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Uyku &ouml;r&uuml;nt&uuml;s&uuml;nde bozulma</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Uykuyu g&uuml;&ccedil;lendirmeye hazır olma</p>
+        </td>
+
+        <td rowspan="2" class="sortable-target" width="300"></td>
+      </tr>
+      <tr class="pink">
+        <td class="sortable-td-item">
+          <p>Uykusuzluk (İnsomnia)</p>
+        </td>
+        <td class="sortable-td-item">
+          <p>Uyku yoksunluğu</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="plugins/fomantic/semantic.min.js"></script>
+  <script src="js/html5sortable.min.js"></script>
+  <script>
+    sortable(".sortable-td-item", {
+      forcePlaceholderSize: false,
+      copy: false,
+      acceptFrom: ".sortable-td-item,.sortable-target",
+      placeholderClass: "mb1 bg-navy border border-yellow",
+      orientation: 'horizontal',
+      maxItems: 1,
+    });
+    sortable(".sortable-target", {
+      forcePlaceholderSize: false,
+      copy: false,
+      acceptFrom: ".sortable-target,.sortable-td-item",
+      placeholderClass: "mb1 border border-maroon",
+      maxItems: 1,
+      orientation: 'horizontal'
+    });
+    sortable(".sortable-target", {
+      forcePlaceholderSize: false,
+    });
+  </script>
+</body>
+
 </html>
