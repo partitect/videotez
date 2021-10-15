@@ -127,8 +127,12 @@
 
 .questions .list a:hover {
   background: white;
-  -webkit-transition: all ease .3ms;
-  transition: all ease .3ms;
+  -webkit-transition: all ease 0.3ms;
+  transition: all ease 0.3ms;
   color: black;
+}
+
+.sonuc-wrapper {
+  padding: 3em;
 }
 /*# sourceMappingURL=main.css.map */
