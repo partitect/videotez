@@ -1,0 +1,205 @@
+.ustBant {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  background: rgba($color: #000000, $alpha: 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px !important;
+  z-index: 999;
+  .left-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .play-pause {
+      background: hsla(0, 0%, 100%, 0.15);
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-right: 10px;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+      span {
+        color: white;
+      }
+    }
+    .users {
+      background: hsla(0, 0%, 100%, 0.15);
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-right: 10px;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+      span {
+        color: white;
+      }
+    }
+    .video-count {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: white;
+      background: hsla(0, 0%, 100%, 0.15);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 700;
+      width: 80px;
+    }
+  }
+  .right-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .siralama {
+      background: hsla(0, 0%, 100%, 0.15);
+      padding: 10px 14px;
+      border-radius: 8px 0px 0px 8px;
+      margin-right: 2px;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+      span {
+        color: white;
+      }
+    }
+    .puan {
+      background: hsla(0, 0%, 100%, 0.15);
+      padding: 10px 14px;
+      border-radius: 8px;
+      border-radius: 0px 8px 8px 0px;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+      span {
+        color: white;
+      }
+    }
+    .skip-video {
+      background: hsla(0, 0%, 100%, 0.15);
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-left: 12px;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+      span {
+        color: white;
+      }
+    }
+  }
+}
+.menu-button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all ease 0.3ms;
+    filter: drop-shadow(0px 4px 3px #000);
+    &:hover {
+      //width: 55px;
+      height: 55px;
+      transition: all ease 0.3ms;
+    }
+  }
+}
+.true-answer {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  cursor: pointer;
+  width: 50px;
+  img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all ease 0.3ms;
+    filter: drop-shadow(0px 4px 3px #000);
+    &:hover {
+      //width: 55px;
+      height: 55px;
+      transition: all ease 0.3ms;
+    }
+  }
+}
+.wrong-answer {
+  position: fixed;
+  bottom: 10px;
+  cursor: pointer;
+  left: 100px;
+  width: 50px;
+  img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all ease 0.3ms;
+    filter: drop-shadow(0px 4px 3px #000);
+    &:hover {
+      //width: 55px;
+      height: 55px;
+      transition: all ease 0.3ms;
+    }
+  }
+}
+#videoplayer {
+  object-fit: cover;
+}
+#custom-seekbar {
+  span {
+    background-color: #6ee;
+    position: fixed;
+    height: 1px;
+    z-index: 9999;
+    box-shadow: 0 0 10px #fff;
+  }
+}
+.answer-feed {
+  position: fixed;
+  bottom: -80px;
+  left: 0;
+ 
+  width: 100% !important;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span{
+    color: white;
+    font-size: 3em;
+  }
+  &.true{
+    background:green
+  }&.wrong{
+    background:red
+  }
+}

@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+	head
+		link(rel='stylesheet' href='../plugins/fomantic/semantic.min.css')
+		link(rel='stylesheet' href='../css/main.min.css')
+		title Hello, World!
+	body
+	include ./data/table-data.pug
+		table.ui.celled.structured.small.table
+			thead
+				tr
+					each list in [{"colspan":3,"title":"Hemşirelik Tanıları"},{"title":"Öncelik Sırası"},{"title":"Belirlenen Hemşirelik Tanıları"}]
+						th.center.aligned(colspan="#{list.colspan}") #{list.title}
+			tbody
+				each value, index in supportList
+					tr
+						td(rowspan="2")=value.title
+						each list,idx in value.list
+							td.green=list
+							td
+					tr
+						td.teal=index
+						td
+					
+	script(src="../js/jquery-3.6.0.min.js")
+	script(src="../plugins/fomantic/semantic.min.js")
+	script(src="../js/html5sortable.min.js")
+	script(src="../js/tables-sort.js")
+		

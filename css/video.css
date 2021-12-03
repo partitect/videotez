@@ -1,0 +1,301 @@
+.ustBant {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  background: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px !important;
+  z-index: 999;
+}
+
+.ustBant .left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.ustBant .left-content .play-pause {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-right: 10px;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ustBant .left-content .play-pause img {
+  width: 25px;
+  height: 25px;
+}
+
+.ustBant .left-content .play-pause span {
+  color: white;
+}
+
+.ustBant .left-content .users {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-right: 10px;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ustBant .left-content .users img {
+  width: 25px;
+  height: 25px;
+}
+
+.ustBant .left-content .users span {
+  color: white;
+}
+
+.ustBant .left-content .video-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  width: 80px;
+}
+
+.ustBant .right-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.ustBant .right-content .siralama {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 14px;
+  border-radius: 8px 0px 0px 8px;
+  margin-right: 2px;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ustBant .right-content .siralama img {
+  width: 25px;
+  height: 25px;
+}
+
+.ustBant .right-content .siralama span {
+  color: white;
+}
+
+.ustBant .right-content .puan {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 14px;
+  border-radius: 8px;
+  border-radius: 0px 8px 8px 0px;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ustBant .right-content .puan img {
+  width: 25px;
+  height: 25px;
+}
+
+.ustBant .right-content .puan span {
+  color: white;
+}
+
+.ustBant .right-content .skip-video {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-left: 12px;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ustBant .right-content .skip-video img {
+  width: 25px;
+  height: 25px;
+}
+
+.ustBant .right-content .skip-video span {
+  color: white;
+}
+
+.menu-button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+
+.menu-button img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3ms;
+  transition: all ease 0.3ms;
+  -webkit-filter: drop-shadow(0px 4px 3px #000);
+          filter: drop-shadow(0px 4px 3px #000);
+}
+
+.menu-button img:hover {
+  height: 55px;
+  -webkit-transition: all ease 0.3ms;
+  transition: all ease 0.3ms;
+}
+
+.true-answer {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  cursor: pointer;
+  width: 50px;
+}
+
+.true-answer img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3ms;
+  transition: all ease 0.3ms;
+  -webkit-filter: drop-shadow(0px 4px 3px #000);
+          filter: drop-shadow(0px 4px 3px #000);
+}
+
+.true-answer img:hover {
+  height: 55px;
+  -webkit-transition: all ease 0.3ms;
+  transition: all ease 0.3ms;
+}
+
+.wrong-answer {
+  position: fixed;
+  bottom: 10px;
+  cursor: pointer;
+  left: 100px;
+  width: 50px;
+}
+
+.wrong-answer img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3ms;
+  transition: all ease 0.3ms;
+  -webkit-filter: drop-shadow(0px 4px 3px #000);
+          filter: drop-shadow(0px 4px 3px #000);
+}
+
+.wrong-answer img:hover {
+  height: 55px;
+  -webkit-transition: all ease 0.3ms;
+  transition: all ease 0.3ms;
+}
+
+#videoplayer {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#custom-seekbar span {
+  background-color: #6ee;
+  position: fixed;
+  height: 1px;
+  z-index: 9999;
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 10px #fff;
+}
+
+.answer-feed {
+  position: fixed;
+  bottom: -80px;
+  left: 0;
+  width: 100% !important;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.answer-feed span {
+  color: white;
+  font-size: 3em;
+}
+
+.answer-feed.true {
+  background: green;
+}
+
+.answer-feed.wrong {
+  background: red;
+}
+/*# sourceMappingURL=video.css.map */
